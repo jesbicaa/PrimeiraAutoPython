@@ -49,5 +49,5 @@ mail.HTMLBody = f'''
 try:
     mail.Send()
     print('email enviado')
-finally:
+except:
     print('erro')
