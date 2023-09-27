@@ -29,7 +29,7 @@ mail.Subject = 'Relatório de Vendas por Lojas'
 mail.HTMLBody = f'''
 <p>Prezados,</p>
 
-<p>Segue o Relaório de Vendas pos cada Loja.</p>
+<p>Segue o Relaório de Vendas por cada Loja.</p>
 
 <p>Faturamento:</p>
 {faturamento.to_html(formatters={'Valor Final': 'R${:,.2f}'.format})}
@@ -49,5 +49,5 @@ mail.HTMLBody = f'''
 try:
     mail.Send()
     print('email enviado')
-except:
+finally:
     print('erro')
