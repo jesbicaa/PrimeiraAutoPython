@@ -24,7 +24,7 @@ ticket_medio = ticket_medio.rename(columns={0: 'Ticket Médio'})
 # enviar tabelas no email
 outlook = win32.Dispatch('outlook.application')
 mail = outlook.CreateItem(0)
-mail.To = 'detrazprafrente13@gmail.com'
+mail.To = 'terceirotcc2023@gmail.com'
 mail.Subject = 'Relatório de Vendas por Lojas'
 mail.HTMLBody = f'''
 <p>Prezados,</p>
